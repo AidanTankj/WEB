@@ -28,9 +28,10 @@
 
 		#tagline { position: relative; top: -93px; height: 950px; z-index: -1; width: 100%; background-image: url("editedbg.png"); background-repeat: no-repeat; background-size: cover}
 
-		#about { width:100%; height: 700px; background-image: url("Homepagebg2.png"); background-size: cover; background-repeat: no-repeat; position: relative; top: -123px}
+		#about { width:100%; height: 700px; background-image: url("Homepagebg2.png"); background-size: cover; background-repeat: no-repeat; background-clip: padding-box; position: relative; top: -123px}
 		#about h1 { font-family: 'League Spartan', sans-serif; font-weight: bold; color: white}
 		#about h2 { font-family: 'Alice', cursive; color: white}	
+		#abouttext { max-height: 700px; text-align: center; position: relative; padding-top: 10%; overflow: hidden; box-sizing: border-box}
 		</style
 	</head> 
 
@@ -78,7 +79,7 @@
 		</div>
 
 		<div id="about">
-			<div style="text-align: center; position: relative; top: 170px">
+			<div id="abouttext">
 				<h1> A JOURNEY FOLLOWING THE SCENTS OF EXOTICA.</h1>
 				<br>
 				<br>
