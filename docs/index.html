@@ -15,15 +15,15 @@
 		.navbar-logo { clear: left; display: flex; align-items: center; font-size: 32px; font-family: "Roboto", sans-serif; font-weight: bold;}
 		.navbar-logo img { padding-left: 25px; margin-right: 7px; max-height: 40px; top: 10px } 
 		.navbar-slogan { padding-left: 20px; font-size: 22px; font-family: 'Abhaya Libre', sans-serif; letter-spacing: 6px; margin-top: -5px} 
-		.navbar-tabs { list-style-type: none; display: flex; align-items: center; margin-left:0px} 
-		.navbar-tab { margin-right: 35px; font-size: 27px; font-family: 'Aleo', sans-serif;} 
+		.navbar-tabs { list-style-type: none; display: flex; align-items: center; justify-content: space-between} 
+		.navbar-tab { font-size: 27px; font-family: 'Aleo', sans-serif;} 
 		.navbarbuttons { color: white; text-decoration: none}
  		.navbarbuttons:hover { color: #FFFFFF55}
 		.navbarbuttons:active { color: #4A2C2A}
 
 
-		.search-icon, .language-icon { margin-left: 10px; margin-right: 15px; cursor: pointer; } 
-		.navbar-right { display: flex; justify-content: space-between; align-items: center; margin-right: 40px;} 
+		.search-icon, .language-icon, .login { margin-left: 10px; margin-right: 25px; cursor: pointer;  } 
+		.navbar-right { display: flex; align-items: center; margin-right: 40px;} 
 
 		body { max-height: 500px; margin: 0px}
 
@@ -70,8 +70,9 @@
 		</ul> 
 		
 		<div class="search-icon"><img src="navicon.png" style="max-height: 20px; padding-top: 6px"></div> 
-		<div class="language-icon"><img src="languageicon.png" style="max-height: 20px; padding-top: 6px"></div>
-		<div><a href="" class="navbarbuttons navbar-tab">Login</a></div>
+		<div class="language-icon"><img src="languageicon.png" style="max-height: 20px; padding-top: 3px"></div>
+
+		<div><a href="" class="login navbar-tab navbarbuttons">Login</a></div>
 		</div> 
 		</div> 
 
