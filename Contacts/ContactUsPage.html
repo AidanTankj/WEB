@@ -96,29 +96,22 @@
 
   <script>
     function validateForm(event) {
-      event.preventDefault(); // Prevent default form submission behavior
+      event.preventDefault(); 
   
       var name = document.getElementById("name").value;
       var email = document.getElementById("email").value;
       var feedback = document.getElementById("feedback").value;
-      
-      // Basic form validation
+    
       if (name.trim() === "" || email.trim() === "" || feedback.trim() === "") {
         alert("Please fill out all fields in the form.");
         return false;
       }
   
-      // Email validation using a simple regular expression
       var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!email.match(emailPattern)) {
         alert("Please enter a valid email address.");
         return false;
       }
-  
-      // You can add more complex validation if needed (e.g., check feedback length)
-      // ...
-  
-      // If the form passes validation, you can submit the form to a server or process the data here.
       alert("Form submitted successfully!");
       return true;
     }
