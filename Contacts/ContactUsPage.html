@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bazuzu Coffee</title>
+  <link rel="stylesheet" type="text/css" href="ContactUsPage.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="C:\Users\user\OneDrive\Desktop\Web Fundamentals\WebFundamentalsAssignment\bazuzulogo.png" alt="Bazuzu Coffee Logo">
+      <div>
+        Bazuzu Coffee
+        <div class="navbar-slogan">Flavor, Aroma, Taste</div>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <ul class="navbar-tabs">
+        <li class="navbar-tab home"><a href="#">Home</a></li>
+        <li class="navbar-tab products"><a href="#">Products</a></li>
+        <li class="navbar-tab gift-cards"><a href="#">Gift Cards</a></li>
+        <li class="navbar-tab contacts"><a href="C:\Users\user\OneDrive\Desktop\Web Fundamentals\WebFundamentalsAssignment\ContactUsPage.html">Contacts</a></li>
+      </ul>
+      <div class="search-icon">🔍</div>
+      <div class="language-icon">🌐</div>
+    </div>
+  </div>
+    <div class="high-quality-image">
+      <img src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2023-07-24 165346.png" alt="High Quality Image">
+    </div>
+  <div class="follow-us">
+    <h2>Follow Us on Social Media</h2>
+    <div class="social-icons">
+      <a href="https://facebook.com"><img src="C:\Users\user\Downloads\facebook.png" alt="Social Media Icon 1"></a>
+      <a href="https://instagram.com"><img src="C:\Users\user\Downloads\instagram.png" alt="Social Media Icon 2"></a>
+      <a href="https://twitter.com"><img src="C:\Users\user\Downloads\twitter.png" alt="Social Media Icon 2"></a>
+    </div>
+  </div>
+  <div class="contact-info">
+    <h2>Call Us / Message Us</h2>
+    <div class="phone-number">(+20) 2 3456 7890</div>
+    <div class="contact-icons">
+      <div class="call-icon">✆</div>
+      <div class="message-icon">💬</div>
+    </div>
+  </div>
+  <div class="feedback-wrapper">
+    <div class="feedback-section">
+      <h2>Give us some feedback!</h2>
+      <div class="rating-stars">
+        <input type="radio" name="rating" id="star5" value="5">
+        <label for="star5"></label>
+        <input type="radio" name="rating" id="star4" value="4">
+        <label for="star4"></label>
+        <input type="radio" name="rating" id="star3" value="3">
+        <label for="star3"></label>
+        <input type="radio" name="rating" id="star2" value="2">
+        <label for="star2"></label>
+        <input type="radio" name="rating" id="star1" value="1">
+        <label for="star1"></label>
+      </div>
+      <form id="feedbackForm" onsubmit="return validateForm(event)"> 
+        <div class="feedback-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="feedback">Your Feedback:</label>
+          <textarea id="feedback" name="feedback" required></textarea>
+    
+          <button type="submit">Submit</button>
+        </div>
+      </form> 
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  <div class="malaysian-branch">
+    <h2>Visit Our Malaysian Branch</h2>
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=pyramid%20of%20giza&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div class="address">
+      <p>No.69, Al Haram, Nazlet El-Semman, Al Giza Desert, Giza Governorate 3512201,  Malaysia</p>
+      <p>Opening Hours:</p>
+      <p>Mon-Fri: 6am-9pm</p>
+      <p>Sat-Sun: 5am-10pm</p>
+    </div>
+  </div>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault(); // Prevent default form submission behavior
+  
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var feedback = document.getElementById("feedback").value;
+      
+      // Basic form validation
+      if (name.trim() === "" || email.trim() === "" || feedback.trim() === "") {
+        alert("Please fill out all fields in the form.");
+        return false;
+      }
+  
+      // Email validation using a simple regular expression
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+  
+      // You can add more complex validation if needed (e.g., check feedback length)
+      // ...
+  
+      // If the form passes validation, you can submit the form to a server or process the data here.
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>
+
