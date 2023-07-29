@@ -7,24 +7,30 @@
 		<link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
 
-
 		<style> 
 		/* CSS for the navigation bar */ 
-		.navbar { position: relative; top: 0; left: 0; width: 100%; padding: 15px; background-color: #0000008F; color: #FFFFFF; display: flex; align-items: center; white-space: nowrap; justify-content: center} 
+		.navbar { position: relative; top: 0; left: 0; width: 100%; padding: 12px 0px 12px; background-color: #271300EF; color: #FFFFFF; display: flex; align-items: center; white-space: nowrap; justify-content: space-between; overflow-x: hidden} 
 		.navbar-logo { clear: left; display: flex; align-items: center; font-size: 32px; font-family: "Roboto", sans-serif; font-weight: bold;}
 		.navbar-logo img { padding-left: 25px; margin-right: 7px; max-height: 40px; top: 10px } 
 		.navbar-slogan { padding-left: 20px; font-size: 22px; font-family: 'Abhaya Libre', sans-serif; letter-spacing: 6px; margin-top: -5px} 
-		.navbar-tabs { list-style-type: none; display: flex; align-items: center; margin-left: 100px} 
-		.navbar-tab { margin-right: 35px; font-size: 27px; font-family: 'Aleo', sans-serif;} 
+		.navbar-tabs { list-style-type: none; display: flex; align-items: center; justify-content: space-between} 
+		.navbar-tab { font-size: 27px; font-family: 'Aleo', sans-serif;} 
 		.navbarbuttons { color: white; text-decoration: none}
  		.navbarbuttons:hover { color: #FFFFFF55}
 		.navbarbuttons:active { color: #4A2C2A}
-		
-		.search-icon, .language-icon { margin-left: 10px; margin-right: 15px; cursor: pointer; } 
-		.navbar-right { display: flex; justify-content: space-between; align-items: center; margin-right: 40px;} 
 
-		body { margin:-8px; overflow-x: hidden; background-image: url("loginbg.jpg"); background-size: contain; background-repeat: round}
 
+		.search-icon, .language-icon, .login { margin-left: 10px; margin-right: 25px; cursor: pointer;  } 
+		.navbar-right { display: flex; align-items: center; margin-right: 40px;}  
+
+		body { margin:0px; background-image: url("loginbg.jpg"); background-size: 200px 200px; overflow-x: hidden}
+
+		.form-box { position: relative; width: 850px; height: 620px; background: #FFFFFF; margin: 5% auto; overflow: hidden; display: flex}
+		#loginbanner {background-image: url("loginbanner.jpg"); height:620px; width: 430px; background-size: 430px 620px; background-repeat: no-repeat}
+
+		.loginform {position: relative; margin: 0px auto; width: 50%; transition: .5s}
+		.input-field { width: 100%; padding: 10px 0; margin: 5px 0; border-width: 0px 0px 1px 0px}
+	
 		</style
 	</head> 
 
@@ -45,7 +51,7 @@
 		<div class="navbar-right"> 
 		<ul class="navbar-tabs"> 
 		<li class="navbar-tab">
-		<a href="Homepage.html" class="navbarbuttons">Home</a>
+		<a href="/WEB/index.html" class="navbarbuttons">Home</a>
 		</li> 
 		
 		<li class="navbar-tab">
@@ -53,18 +59,39 @@
 		</li> 
 		
 		<li class="navbar-tab">
-		<a href="#" class="navbarbuttons">Gift Cards</a>
+		<a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
 		</li> 
 		
 		<li class="navbar-tab">
-		<a href="#" class="navbarbuttons">Contacts</a>
+		<a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
 		</li> 
 		</ul> 
 		
 		<div class="search-icon"><img src="navicon.png" style="max-height: 20px; padding-top: 6px"></div> 
-		<div class="language-icon"><img src="languageicon.png" style="max-height: 20px; padding-top: 6px"></div> 
+		<div class="language-icon"><img src="languageicon.png" style="max-height: 20px; padding-top: 3px"></div>
+
+		<div><a href="" class="login navbar-tab navbarbuttons">Login</a></div>
 		</div> 
 		</div> 
+
+		
+		<div class="form-box">
+			<div id="loginbanner"></div>
+			<div>
+			<form class="loginform">
+				<input type="text" class="input-field" placeholder="E-mail" required>
+				<input type="text" class="input-field" placeholder="Password" required>
+				<input type="checkbox" class=check-box"><span>Remember Password</span>
+				<button type="submit" class="submit-button">Log in</button>
+			</form>
+			</div>
+			</div>
+
+		</div>
+
+
+
+
 
 	</body> 
 </html>
