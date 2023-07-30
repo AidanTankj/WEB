@@ -214,4 +214,14 @@
       .gmap_iframe {
         height: 400px!important;
       }
+    .footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
