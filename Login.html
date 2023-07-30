@@ -24,7 +24,7 @@
 		.search-icon, .language-icon, .login { margin-left: 10px; margin-right: 25px; cursor: pointer;  } 
 		.navbar-right { display: flex; align-items: center; margin-right: 2%}  
 
-		body { margin:0px; background-image: url("loginbg.jpg"); background-size: 200px 200px; overflow-x: hidden}
+		body { margin:0px; background-image: url("loginbg.jpg"); background-size: 200px 200px; overflow: hidden}
 
 		.form-box { position: relative; width: 850px; height: 620px; background: #FFFFFF; margin: 5% auto; overflow: hidden; display: flex; box-shadow: 0 0 20px 9px #3F23053f}
 
@@ -34,6 +34,7 @@
 		.input-field { width: 100%; padding: 12px 0px; margin: 5px 0; border-width: 0px 0px 1px 0px; outline: none}
 		.login-button { width: 80%; padding: 10px 30px; margin-top: 14%; margin-left: 10%; cursor: pointer; background: linear-gradient(to right, #8D7B68, #C8B6A6); outline: none; border-radius: 30px; border: 0}
 		
+		@media (max-width: 750px) {#loginbanner {display: none} .form-box {width: 75%; height:90%; max-height: 600px} .loginform { margin-bottom: 20%}}
 		</style
 	</head> 
 
