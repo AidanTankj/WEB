@@ -16,16 +16,27 @@
 		.navbar-logo { clear: left; display: flex; align-items: center; font-size: 32px; font-family: "Roboto", sans-serif; font-weight: bold;}
 		.navbar-logo img { padding-left: 25px; margin-right: 7px; max-height: 40px; top: 10px } 
 		.navbar-slogan { padding-left: 20px; font-size: 22px; font-family: 'Abhaya Libre', sans-serif; letter-spacing: 6px; margin-top: -5px} 
-		.navbar-tabs { list-style-type: none; display: flex; align-items: center} 
+		.navbar-tabs { display: flex; align-items: center} 
+		li { list-style-type: none}
 		.navbar-tab { font-size: 27px; font-family: 'Aleo', sans-serif; margin-right: 30px} 
 		.navbarbuttons { color: white; text-decoration: none}
  		.navbarbuttons:hover { color: #FFFFFF55}
 		.navbarbuttons:active { color: #4A2C2A}
 
+		.search-icon, .language-icon, .login { margin-left: 10px; margin-right: 25px; cursor: pointer } 
+		.navbar-right { display: flex; align-items: center; margin-right: 2%}
 
-		.search-icon, .language-icon, .login { margin-left: 10px; margin-right: 25px; cursor: pointer;  } 
-		.navbar-right { display: flex; align-items: center; margin-right: 2%}  
-
+		.menubutton { display: none; cursor: pointer; scale: 1.3; margin: 0 25px}
+		
+		.dropdown-menu {position: absolute; right: 2%; top: 100px; width: 200px; border-radius: 20px; backdrop-filter: blur(6px); background: #0000002F; display: none; height: 0px; overflow: hidden; transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)}
+		.dropdown-menu li { padding: 15px 0px 0px 0px; align-items: center; justify-content: center; display: flex}			
+		.dropdown-menu.open { height: 250px}
+		
+  		@media (max-width: 1065px) { .navbar-tabs, .login, .search-icon, .language-icon {display: none} .menubutton {display: block} 
+		.dropdown-menu {display: block} .navbar-tab {margin: 0px}}
+		
+		
+		
 		body { max-height: 500px; margin: 0px}
 
 		#tagline { position: relative; top: -93px; height: 950px; z-index: -1; width: 100%; background-image: url("editedbg.png"); background-repeat: no-repeat; background-size: cover; background-position: center center}
@@ -74,8 +85,33 @@
 		<div class="language-icon"><img src="languageicon.png" style="max-height: 20px; padding-top: 3px"></div>
 
 		<div><a href="/WEB/Login.html" class="login navbar-tab navbarbuttons">Login</a></div>
+		
+		<div class="menubutton">
+			<img src="bars-solid.png" style="width: 20px; padding-top: 5px" id="menubuttonimg">
+		</div>
 		</div> 
-		</div> 
+		</div>
+
+		<div class="dropdown-menu">
+		<li class="navbar-tab">
+		<a href="/WEB/index.html" class="navbarbuttons">Home</a>
+		</li> 
+		
+		<li class="navbar-tab">
+		<a href="#" class="navbarbuttons">Products</a>
+		</li> 
+		
+		<li class="navbar-tab">
+		<a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
+		</li> 
+		
+		<li class="navbar-tab">
+		<a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
+		</li> 
+
+		<li class="navbar-tab" style="background: linear-gradient(to right, #8D7B68, #C8B6A6); outline: none; border-radius: 30px; border: 0; padding: 0px; margin-top: 15px; margin-left: 24px; width: 75%">
+		<a href="/WEB/Login.html" class="navbarbuttons">Login</a>
+		</div>
 
 		<div id="tagline">
   			<img src="TaglineArt.png" alt="A Taste of the world in a cup of coffee" style="position: relative; top: 300px; left: 10%; width: 75%">
@@ -95,5 +131,18 @@
 				</p>
 			</div>
 		</div>
+
+		<script>
+			const toggleBtn = document.querySelector('.menubutton')
+			const toggleBtnIcon = document.querySelector('#menubuttonimg')
+			const dropDownMenu = document.querySelector('.dropdown-menu')
+
+			toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')	
+			const imgSrc = isOpen ? 'xmark.png' : 'bars-solid.png';
+  			toggleBtnIcon.src = imgSrc;
+			}
+		</script>
 	</body> 
 </html>
