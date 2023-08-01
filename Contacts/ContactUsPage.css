@@ -53,6 +53,11 @@
 
     /* CSS for the Contacts page */
 
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
     .follow-us, .contact-info, .newsletter, .malaysian-branch {
       font-family: "Roboto", sans-serif;
     }
@@ -105,8 +110,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 400px; 
-  margin: 0 auto; 
+  max-width: 400px;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -214,14 +219,16 @@
       .gmap_iframe {
         height: 400px!important;
       }
-    .footer {
-  background-color: #000000;
-  color: #FFFFFF;
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
+
+      .footer {
+        background-color: #000000;
+        color: #FFFFFF;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+      
 
