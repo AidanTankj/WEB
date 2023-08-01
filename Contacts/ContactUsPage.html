@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Bazuzu Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="ContactUsPage.css">
 </head>
 <body>
@@ -93,7 +94,7 @@
       <p>Sat-Sun: 5am-10pm</p>
     </div>
   </div>
-   <div class="footer">
+  <div class="footer">
     <p>&copy; 2023 Bazuzu Coffee Company. All rights reserved.</p>
   </div>
 
@@ -104,17 +105,22 @@
       var name = document.getElementById("name").value;
       var email = document.getElementById("email").value;
       var feedback = document.getElementById("feedback").value;
-    
+
       if (name.trim() === "" || email.trim() === "" || feedback.trim() === "") {
         alert("Please fill out all fields in the form.");
         return false;
       }
-  
       var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!email.match(emailPattern)) {
         alert("Please enter a valid email address.");
         return false;
       }
+
+      if (feedback.length > 100) {
+      alert("Feedback must be within 100 characters.");
+      return false;
+    }
+  
       alert("Form submitted successfully!");
       return true;
     }
