@@ -124,7 +124,13 @@
 .feedback-form button:hover {
   background-color: #333333;
 }
-
+.feedback-wrapper {
+  background-color: #734028;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 100%;
+}
 .rating-stars {
   display: inline-block;
 }
@@ -154,14 +160,6 @@
 .rating-stars {
   direction: rtl;
 }
-.feedback-wrapper {
-  background-color: #734028;
-  padding: 20px;
-  border-radius: 5px;
-  margin: 20px auto;
-  max-width: 600px;
-}
-
 
   .malaysian-branch img {
     width: 50%;
