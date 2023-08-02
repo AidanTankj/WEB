@@ -21,3 +21,14 @@ previewBox.forEach(close =>{
         previewContainer.style.display = 'none';
     };
 });
+
+const toggleBtn = document.querySelector('.menubutton')
+			const toggleBtnIcon = document.querySelector('#menubuttonimg')
+			const dropDownMenu = document.querySelector('.dropdown-menu')
+
+			toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')	
+			const imgSrc = isOpen ? 'xmark.png' : 'bars-solid.png';
+  			toggleBtnIcon.src = imgSrc;
+			}
