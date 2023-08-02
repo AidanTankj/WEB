@@ -1,0 +1,74 @@
+/* Login Page CSS*/
+
+body {
+    margin: 0px;
+    background-image: url("loginbg.jpg");
+    background-size: 200px 200px;
+    overflow-x: hidden
+}
+
+.form-box {
+    position: relative;
+    width: 850px;
+    height: 620px;
+    background: #FFFFFF;
+    margin: 5% auto;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 0 20px 9px #3F23053f
+}
+
+#loginbanner {
+    background-image: url("loginbanner.jpg");
+    height: 620px;
+    width: 626px;
+    background-size: 430px 620px;
+    background-repeat: no-repeat
+}
+
+.loginform {
+    position: relative;
+    margin: 0px auto;
+    width: 50%;
+    transition: .5s
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 0px;
+    margin: 5px 0;
+    border-width: 0px 0px 1px 0px;
+    outline: none
+}
+
+.login-button {
+    width: 80%;
+    padding: 10px 30px;
+    margin-top: 14%;
+    margin-left: 10%;
+    cursor: pointer;
+    background: linear-gradient(to right, #8D7B68, #C8B6A6);
+    outline: none;
+    border-radius: 30px;
+    border: 0
+}
+
+.navbar {
+    background-color: #271300EF;
+}
+
+@media (max-width: 850px) {
+    #loginbanner {
+        display: none
+    }
+
+    .form-box {
+        width: 75%;
+        height: 90%;
+        max-height: 600px
+    }
+
+    .loginform {
+        margin-bottom: 20%
+    }
+}

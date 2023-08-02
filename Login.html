@@ -7,90 +7,92 @@
 		<link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="navbar.css">
+		<link rel="stylesheet" href="login.css">
 
-		<style> 
-		/* CSS for the navigation bar */ 
-		.navbar { position: relative; top: 0; left: 0; width: 100%; padding: 12px 0px 12px; background-color: #271300EF; color: #FFFFFF; display: flex; align-items: center; white-space: nowrap; justify-content: space-between; overflow-x: hidden} 
-		.navbar-logo { clear: left; display: flex; align-items: center; font-size: 32px; font-family: "Roboto", sans-serif; font-weight: bold;}
-		.navbar-logo img { padding-left: 25px; margin-right: 7px; max-height: 40px; top: 10px } 
-		.navbar-slogan { padding-left: 20px; font-size: 22px; font-family: 'Abhaya Libre', sans-serif; letter-spacing: 6px; margin-top: -5px} 
-		.navbar-tabs { list-style-type: none; display: flex; align-items: center} 
-		.navbar-tab { font-size: 27px; font-family: 'Aleo', sans-serif; margin-right: 30px} 
-		.navbarbuttons { color: white; text-decoration: none}
- 		.navbarbuttons:hover { color: #FFFFFF55}
-		.navbarbuttons:active { color: #4A2C2A}
-
-
-		.search-icon, .language-icon, .login { margin-left: 10px; margin-right: 25px; cursor: pointer;  } 
-		.navbar-right { display: flex; align-items: center; margin-right: 2%}  
-
-		body { margin:0px; background-image: url("loginbg.jpg"); background-size: 200px 200px; overflow-x: hidden}
-
-		.form-box { position: relative; width: 850px; height: 620px; background: #FFFFFF; margin: 5% auto; overflow: hidden; display: flex; box-shadow: 0 0 20px 9px #3F23053f}
-
-		#loginbanner {background-image: url("loginbanner.jpg"); height:620px; width: 626px; background-size: 430px 620px; background-repeat: no-repeat}
-
-		.loginform {position: relative; margin: 0px auto; width: 50%; transition: .5s}
-		.input-field { width: 100%; padding: 12px 0px; margin: 5px 0; border-width: 0px 0px 1px 0px; outline: none}
-		.login-button { width: 80%; padding: 10px 30px; margin-top: 14%; margin-left: 10%; cursor: pointer; background: linear-gradient(to right, #8D7B68, #C8B6A6); outline: none; border-radius: 30px; border: 0}
-		
-		@media (max-width: 750px) {#loginbanner {display: none} .form-box {width: 75%; height:90%; max-height: 600px} .loginform { margin-bottom: 20%}}
-		</style
 	</head> 
 
-	<body> 
-		<!-- Navigation bar --> 
-		<div class="navbar"> 
-			<div class="navbar-logo"> 
+	<body>
+		<!-- Navigation bar -->
+		<div class="navbar">
+			<div class="navbar-logo">
 				<div>
 					<img src="Logo.png" alt="Bazuzu Coffee Logo">
-					<span style="top: -7px; position: relative; font-family: 'Gagalin', sans-serif; letter-spacing: 2px">Bazuzu Coffee</span>
+					<span id="brand-title">Bazuzu Coffee</span>
 
 					<div class="navbar-slogan">
 						Flavor, Aroma, Taste
-					</div> 
-				</div> 
-			</div> 
-		
-		<div class="navbar-right"> 
-		<ul class="navbar-tabs"> 
-		<li class="navbar-tab">
-		<a href="/WEB/index.html" class="navbarbuttons">Home</a>
-		</li> 
-		
-		<li class="navbar-tab">
-		<a href="#" class="navbarbuttons">Products</a>
-		</li> 
-		
-		<li class="navbar-tab">
-		<a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
-		</li> 
-		
-		<li class="navbar-tab">
-		<a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
-		</li> 
-		</ul> 
-		
-		<div class="search-icon"><img src="navicon.png" style="max-height: 20px; padding-top: 6px"></div> 
-		<div class="language-icon"><img src="languageicon.png" style="max-height: 20px; padding-top: 3px"></div>
+					</div>
+				</div>
+			</div>
 
-		<div><a href="#" class="login navbar-tab navbarbuttons">Login</a></div>
-		</div> 
-		</div> 
+			<div class="navbar-right">
+				<ul class="navbar-tabs">
+					<li class="navbar-tab">
+						<a href="/WEB/index.html" class="navbarbuttons">Home</a>
+					</li>
 
-		
+					<li class="navbar-tab">
+						<a href="/WEB/Products/products.html" class="navbarbuttons">Products</a>
+					</li>
+
+					<li class="navbar-tab">
+						<a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
+					</li>
+
+					<li class="navbar-tab">
+						<a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
+					</li>
+				</ul>
+
+				<div class="search-icon"><img src="navicon.png" style="max-height: 20px; padding-top: 6px"></div>
+				<div class="language-icon"><img src="languageicon.png" style="max-height: 20px; padding-top: 3px"></div>
+
+				<div><a href="/WEB/Login.html" class="login navbar-tab navbarbuttons">Login</a></div>
+
+				<div class="menubutton">
+					<img src="bars-solid.png" style="width: 20px; padding-top: 5px" id="menubuttonimg">
+				</div>
+			</div>
+		</div>
+
+		<div class="dropdown-menu">
+			<li class="navbar-tab">
+				<a href="/WEB/index.html" class="navbarbuttons">Home</a>
+			</li>
+
+			<li class="navbar-tab">
+				<a href="/WEB/Products/products.html" class="navbarbuttons">Products</a>
+			</li>
+
+			<li class="navbar-tab">
+				<a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
+			</li>
+
+			<li class="navbar-tab">
+				<a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
+			</li>
+
+			<li class="navbar-tab" style="background: linear-gradient(to right, #8D7B68, #C8B6A6); outline: none; border-radius: 30px; border: 0; padding: 0px; margin-top: 15px; margin-left: 24px; width: 75%">
+				<a href="/WEB/Login.html" class="navbarbuttons">Login</a>
+		</div>
+		<script src="script.js"></script>
+
+		<!-- Navigation Bar End -->
+
+
 		<div class="form-box">
 			<div id="loginbanner"></div>
 			<div>
-			<img src="loginsymbol.png" style="width: 30%; padding-left: 36%; padding-top: 20%; padding-bottom: 8%">
-			<form class="loginform">
-				<input type="text" class="input-field" placeholder="E-mail" required>
-				<input type="text" class="input-field" placeholder="Password" required>
-				<input type="checkbox" class=check-box"><span> Remember Password</span>
-				<button type="submit" formaction="/WEB/index.html" class="login-button">Log in</button>
-			</form>
+				<img src="loginsymbol.png" style="width: 30%; padding-left: 36%; padding-top: 20%; padding-bottom: 8%">
+				<form class="loginform">
+					<input type="text" class="input-field" placeholder="E-mail" required>
+					<input type="text" class="input-field" placeholder="Password" required>
+					<input type="checkbox" class=check-box"><span> Remember Password</span>
+					<button type="submit" formaction="/WEB/index.html" class="login-button">Log in</button>
+				</form>
 			</div>
-			</div>
+		</div>
 
 		</div>
 
