@@ -53,3 +53,29 @@ function search() {
 	// Display the search results.
 	document.getElementById("searchResults").innerHTML = results.map(element => element.textContent).join("");
 }
+
+    function validateForm(event) {
+      event.preventDefault(); 
+  
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var feedback = document.getElementById("feedback").value;
+
+      if (name.trim() === "" || email.trim() === "" || feedback.trim() === "") {
+        alert("Please fill out all fields in the form.");
+        return false;
+      }
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      if (feedback.length > 100) {
+      alert("Feedback must be within 100 characters.");
+      return false;
+    }
+  
+      alert("Form submitted successfully!");
+      return true;
+    }
