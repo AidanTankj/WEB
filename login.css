@@ -4,6 +4,7 @@ body {
     margin: 0px;
     background-image: url("loginbg.jpg");
     background-size: 200px 200px;
+    height: 820px;
     overflow-x: hidden
 }
 
@@ -12,8 +13,8 @@ body {
     width: 850px;
     height: 620px;
     background: #FFFFFF;
-    margin: 5% auto;
-    overflow: hidden;
+    margin: 3% auto;
+    overflow-x: hidden;
     display: flex;
     box-shadow: 0 0 20px 9px #3F23053f
 }
