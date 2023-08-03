@@ -33,16 +33,16 @@ toggleBtn3.onclick = function () {
 }
 
 function search() {
-	// Get the search term from the input field.
+	
 	const searchTerm = document.getElementById("searchBar").value;
 
-	// Create a regular expression to match the search term.
-	const regex = new RegExp(searchBar, "i");
+	
+	const regex = new RegExp(searchTerm, "i");
 
-	// Get all of the elements on the page.
+	
 	const elements = document.querySelectorAll("*");
 
-	// Loop through the elements and see if they match the search term.
+	
 	let results = [];
 	for (const element of elements) {
 		if (regex.test(element.textContent)) {
@@ -50,7 +50,7 @@ function search() {
 		}
 	}
 
-	// Display the search results.
+	
 	document.getElementById("searchResults").innerHTML = results.map(element => element.textContent).join("");
 }
 
