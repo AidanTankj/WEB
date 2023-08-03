@@ -6,96 +6,94 @@
 		<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&display=swap" rel="stylesheet">
 		<link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     
     <!-- custom css file link -->
     <link rel="stylesheet" href="style_products.css">
-    <link rel="stylesheet" href="/WEB/navbar.css"
+    <link rel="stylesheet" href="/WEB/navbar.css/"
 
     <!-- custom js fle link -->
     <script src="script.js" defer></script>
-    
+    <script src="/WEB/navbar.js" defer></script>
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </head>
         
 <body>
 
-	<!-- Navigation Bar Start -->
-	<header class="navbar">
-		<div class="navbar-logo">
-			<div>
-				<img src="/WEB/Logo.png" alt="Bazuzu Coffee Logo">
-				<span id="brand-title">Bazuzu Coffee</span>
-
-				<div class="navbar-slogan">
-					Flavor, Aroma, Taste
-				</div>
-			</div>
-		</div>
-
-		<div class="navbar-right">
-			<ul class="navbar-tabs">
-				<li class="navbar-tab">
-					<a href="/WEB/index.html" class="navbarbuttons">Home</a>
-				</li>
-
-				<li class="navbar-tab">
-					<a href="/WEB/Products/products.html" class="navbarbuttons">Products</a>
-				</li>
-
-				<li class="navbar-tab">
-					<a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
-				</li>
-
-				<li class="navbar-tab">
-					<a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
-				</li>
-			</ul>
-
-			<div class="search-icon"><img src="/WEB/navicon.png"></div>
-			<div class="language-icon"><img src="/WEB/languageicon.png"></div>
-			<div><a href="/WEB/Login.html" class="login navbar-tab navbarbuttons">Login</a></div>
-
-			<div class="menubutton">
-				<img id="menubuttonimg" src="/WEB/bars-solid.png">
-			</div>
-		</div>
-	</header>
-
-	<div id="google_translate_element"></div>
-	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-	<div class="dropdown-menu">
-
-		<li class="navbar-tab">
-			<a href="/WEB/index.html" class="navbarbuttons">Home</a>
-		</li>
-
-		<li class="navbar-tab">
-			<a href="/WEB/Products/products.html" class="navbarbuttons">Products</a>
-		</li>
-
-		<li class="navbar-tab">
-			<a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
-		</li>
-
-		<li class="navbar-tab">
-			<a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
-		</li>
-
-		<li class="navbar-tab listlogin">
-			<a href="/WEB/Login.html" class="navbarbuttons">Login</a>
-		</li>
-	</div>
-
-	<div class="search-bar">
-		<input type="text" id="searchBar">
-		<button onclick="search()" id="search-button">🔎</button>
-		<div id="searchResults"></div>
-	</div>
-
-	<script src="/WEB/navbar.js"></script>
-	
-	<!-- Navigation Bar End -->
+		<!-- Navigation Bar Start -->
+        <header class="navbar">
+            <div class="navbar-logo">
+                <div>
+                    <img src="/WEB/Logo.png" alt="Bazuzu Coffee Logo">
+                    <span id="brand-title">Bazuzu Coffee</span>
+    
+                    <div class="navbar-slogan">
+                        Flavor, Aroma, Taste
+                    </div>
+                </div>
+            </div>
+    
+            <div class="navbar-right">
+                <ul class="navbar-tabs">
+                    <li class="navbar-tab">
+                        <a href="/WEB/index.html" class="navbarbuttons">Home</a>
+                    </li>
+    
+                    <li class="navbar-tab">
+                        <a href="/WEB/Products/products.html" class="navbarbuttons">Products</a>
+                    </li>
+    
+                    <li class="navbar-tab">
+                        <a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
+                    </li>
+    
+                    <li class="navbar-tab">
+                        <a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
+                    </li>
+                </ul>
+    
+                <div class="search-icon"><img src="/WEB/navicon.png"></div>
+                <div class="language-icon"><img src="/WEB/languageicon.png"></div>
+                <div><a href="/WEB/Login.html" class="login navbar-tab navbarbuttons">Login</a></div>
+    
+                <div class="menubutton">
+                    <img id="menubuttonimg" src="/WEB/bars-solid.png">
+                </div>
+            </div>
+        </header>
+    
+        <div id="google_translate_element"></div>
+    
+        <div class="dropdown-menu">
+    
+            <li class="navbar-tab">
+                <a href="/WEB/index.html" class="navbarbuttons">Home</a>
+            </li>
+    
+            <li class="navbar-tab">
+                <a href="/WEB/Products/products.html" class="navbarbuttons">Products</a>
+            </li>
+    
+            <li class="navbar-tab">
+                <a href="/WEB/Giftcards/giftcards.html" class="navbarbuttons">Gift Cards</a>
+            </li>
+    
+            <li class="navbar-tab">
+                <a href="/WEB/Contacts/ContactUsPage.html" class="navbarbuttons">Contacts</a>
+            </li>
+    
+            <li class="navbar-tab listlogin">
+                <a href="/WEB/Login.html" class="navbarbuttons">Login</a>
+            </li>
+        </div>
+    
+        <div class="search-bar">
+            <input type="text" id="searchBar">
+            <button onclick="search()" id="search-button">🔎</button>
+            <div id="searchResults"></div>
+        </div>
+    
+        <!-- Navigation Bar End -->
     
 <!-- product section start -->
 
