@@ -239,8 +239,10 @@ li {
 }
 
 #menubuttonimg {
+	height: 20px;
 	width: 20px; 
 	padding-top: 5px
+
 }
 			
 .dropdown-menu {

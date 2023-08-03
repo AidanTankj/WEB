@@ -1,3 +1,10 @@
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+      'google_translate_element'
+    );
+  }
+
 const toggleBtn = document.querySelector('.menubutton')
 const toggleBtnIcon = document.querySelector('#menubuttonimg')
 const dropDownMenu = document.querySelector('.dropdown-menu')
