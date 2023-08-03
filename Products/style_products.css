@@ -615,6 +615,11 @@ body { max-height: 500px; margin: 0px; background: var(--bg);}
     text-decoration: line-through;
   }
 
+
+@media (max-width: 768px) {
+    .product-preview .product-preview .preview .product-preview .preview.active .product-preview .preview img {
+      max-width: 95vw; 
+    }
  /* CSS for product-preview section ends */
   
 
