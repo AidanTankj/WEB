@@ -1,34 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="script copy.js" defer></script>
+	
     <style>
 
         @font-face {font-family: myFirstFont; src: url(BrixtonSansOutlineRg.otf)}
-
-		/* CSS for the navigation bar */ 
-		.navbar { position: relative; top: 0; left: 0; width: 100%; padding: 12px 0px 12px; background-color: #0000008F; color: #FFFFFF; display: flex; align-items: center; white-space: nowrap; justify-content: space-between; overflow-x: hidden} 
-		.navbar-logo { clear: left; display: flex; align-items: center; font-size: 32px; font-family: "Roboto", sans-serif; font-weight: bold;}
-		.navbar-logo img { padding-left: 25px; margin-right: 7px; max-height: 40px; top: 10px } 
-		.navbar-slogan { padding-left: 20px; font-size: 22px; font-family: 'Abhaya Libre', sans-serif; letter-spacing: 6px; margin-top: -5px} 
-		.navbar-tabs { display: flex; align-items: center} 
-		li { list-style-type: none}
-		.navbar-tab { font-size: 27px; font-family: 'Aleo', sans-serif; margin-right: 30px} 
-		.navbarbuttons { color: white; text-decoration: none}
- 		.navbarbuttons:hover { color: #FFFFFF55}
-		.navbarbuttons:active { color: #4A2C2A}
-
-		.search-icon, .language-icon, .login { margin-left: 10px; margin-right: 25px; cursor: pointer } 
-		.navbar-right { display: flex; align-items: center; margin-right: 2%}
-
-		.menubutton { display: none; cursor: pointer; scale: 1.3; margin: 0 25px}
-		
-		.dropdown-menu {position: absolute; right: 2%; top: 100px; width: 200px; border-radius: 20px; backdrop-filter: blur(6px); background: #0000002F; display: none; height: 0px; overflow: hidden; transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)}
-		.dropdown-menu li { padding: 15px 0px 0px 0px; align-items: center; justify-content: center; display: flex}			
-		.dropdown-menu.open { height: 250px}
-		
-  		@media (max-width: 1065px) { .navbar-tabs, .login, .search-icon, .language-icon {display: none} .menubutton {display: block} 
-		.dropdown-menu {display: block} .navbar-tab {margin: 0px}}
 
     
         body {background-color: #795E5E ; margin: 0} 
@@ -58,30 +34,36 @@
             
     </style>
 
-        <title>Bazuzu Coffee</title> 
-
-        <link rel="stylesheet" href="style.css">
-
-		<link rel="shortcut icon" href="logo.png">
-		<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&display=swap" rel="stylesheet">
-		<link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
-<meta charset="utf-8">
+<title>Bazuzu Coffee</title> 
+<link rel="shortcut icon" href="Logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=League+Spartan" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head> 
-<body> 
-	<!-- Navigation bar --> 
-<div class="navbar"> 
- <div class="navbar-logo"> 
-	 <div>
-		 <img src="Logo.png" alt="Bazuzu Coffee Logo">
-		 <span style="top: -7px; position: relative; font-family: 'Gagalin', sans-serif; letter-spacing: 2px">Bazuzu Coffee</span>
 
-		 <div class="navbar-slogan">
-			 Flavor, Aroma, Taste
-		 </div> 
-	 </div> 
- </div> 
+<!-- custom css file link -->
+<link rel="stylesheet" href="style.css">
+
+<!-- custom js fle link -->
+<script src="script.js" defer></script>
+
+</head>
+
+<body> 
+       <!-- Navigation bar --> 
+<div class="navbar"> 
+    <div class="navbar-logo"> 
+        <div>
+            <img src="Logo.png" alt="Bazuzu Coffee Logo">
+            <span style="top: -7px; position: relative; font-family: 'Gagalin', sans-serif; letter-spacing: 2px">Bazuzu Coffee</span>
+
+            <div class="navbar-slogan">
+                Flavor, Aroma, Taste
+            </div> 
+        </div> 
+    </div> 
 
 <div class="navbar-right"> 
 <ul class="navbar-tabs"> 
@@ -108,7 +90,7 @@
 <div><a href="/WEB/Login.html" class="login navbar-tab navbarbuttons">Login</a></div>
 
 <div class="menubutton">
- <img src="bars-solid.png" style="width: 20px; padding-top: 5px" id="menubuttonimg">
+    <img src="bars-solid.png" style="width: 20px; padding-top: 5px" id="menubuttonimg">
 </div>
 </div> 
 </div>
@@ -133,9 +115,10 @@
 <li class="navbar-tab" style="background: linear-gradient(to right, #8D7B68, #C8B6A6); outline: none; border-radius: 30px; border: 0; padding: 0px; margin-top: 15px; margin-left: 24px; width: 75%">
 <a href="/WEB/Login.html" class="navbarbuttons">Login</a>
 </div>
+
         
 
-    <img style="position: relative; top: 0; left: 0; width: 100%; padding: 12px 0px 12px; background-color: #0000008F; color: #795E5E; display: flex; align-items: center; white-space: nowrap; justify-content: space-between; overflow-x: hidden; width:100%;" src="background-giftcards.png" >
+    <img style="position: relative; top: 0; left: 0; width: 100%; padding: 12px 0px 12px; background-color: #0000008F; color: #795E5E; display: flex; align-items: center; white-space: nowrap; justify-content: space-between; overflow-x: hidden; height:100%" src="background-giftcards.png" >
 
 <header>
     <h1 style="background-color:#795E5E; color:#FFFFFF55">&nbsp; GET &nbsp; SOME &nbsp; GIFT &nbsp; CARDS &nbsp;</h1> 
@@ -148,11 +131,7 @@
     
     <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
+
 <body>
 
 
