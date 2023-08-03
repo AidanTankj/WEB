@@ -618,25 +618,79 @@ body { max-height: 500px; margin: 0px; background: var(--bg);}
  /* CSS for product-preview section ends */
   
 
-  /* Mobile view styles */
-@media screen and (max-width: 600px) {
-	.popup_flight_travlDil {
-		width: 80%; /* Adjust the width as needed */
-		margin: 10% auto; /* Centers the popup */
-	}
 
-	.content_flightht_travel_dil {
-		font-size: 120%; /* Adjust font size for better readability on mobile */
-	}
 
-	/* Center the close button on mobile */
-	.close_flight_travelDl {
-		position: absolute;
-		top: 5px;
-		right: 10px;
-	}
+
+
+
+
+
+ 
+  /* Common styles for all screens */
+.product-preview {
+  display: flex;
+  flex-wrap: wrap;
 }
-  
+
+.preview {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styles specific to mobile screens */
+@media (max-width: 767px) {
+  .preview {
+    max-width: 100%; /* Adjust the width for smaller screens */
+  }
+
+  /* Hide all paragraphs except the first one on mobile */
+  .preview p:not(:first-child) {
+    display: none;
+  }
+
+  /* Show the "close-button" and the first paragraph only when the popup is open */
+  .preview.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preview.active p {
+    display: block;
+  }
+
+  /* Adjust the font size for better mobile readability */
+  .preview h1,
+  .preview h2,
+  .preview h3,
+  .preview h4,
+  .preview h5,
+  .preview h6,
+  .preview p {
+    font-size: 14px;
+  }
+
+  /* Center the price div */
+  .price-1,
+  .price-2,
+  .price-3,
+  .price-4,
+  .price-5,
+  .price-6 {
+    text-align: center;
+  }
+}
+
   
   
   
