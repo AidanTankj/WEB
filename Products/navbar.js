@@ -1,12 +1,12 @@
 const toggleBtn4 = document.querySelector('.menubutton')
-const toggleBtnIcon = document.querySelector('#menubuttonimg')
+const toggleBtnIcon2 = document.querySelector('#menubuttonimg')
 const dropDownMenu4 = document.querySelector('.dropdown-menu')
 
 toggleBtn4.onclick = function () {
 	dropDownMenu4.classList.toggle('open')
 	const isOpen = dropDownMenu4.classList.contains('open')
 	const imgSrc = isOpen ? 'xmark.png' : 'bars-solid.png';
-	toggleBtnIcon.src = imgSrc;
+	toggleBtnIcon2.src = imgSrc;
 }
 
 const toggleBtn5 = document.querySelector('.search-icon')
