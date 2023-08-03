@@ -1,0 +1,67 @@
+/* Home CSS*/
+
+body {
+    max-height: 500px;
+    margin: 0px
+}
+
+#tagline {
+    position: relative;
+    top: -93px;
+    height: 950px;
+    z-index: -1;
+    width: 100%;
+    background-image: url("editedbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
+}
+
+#about {
+    width: 100%;
+    background-image: url("Homepagebg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    position: relative;
+    top: -123px;
+    background-position: center center;
+    padding: 10% 0px
+}
+
+#about h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    color: white
+}
+
+#about h2 {
+    padding-top: 1%;
+    font-family: 'Alice', cursive;
+    color: white;
+}
+
+#abouttext {
+    max-height: 900px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0px 10%;
+}
+
+#abouttext p {
+    font-family: Times New Roman;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    padding-top: 3%
+}
+
+@media (max-width: 905px) {
+    #about h2 {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
