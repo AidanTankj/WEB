@@ -55,7 +55,7 @@ html::-webkit-scrollbar-thumb{
 	align-items: center;
 	white-space: nowrap;
 	justify-content: space-between;
-	overflow-x: hidden
+	overflow-x: hidden;
 } 
 
 .navbar-logo { 
