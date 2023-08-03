@@ -43,18 +43,19 @@ html::-webkit-scrollbar-thumb{
 
 
 /* CSS for the navigation bar */ 
-.navbar { 
-  position: relative; 
-  top: 0; left: 0;
-  width: 100%;
-  padding: 12px 0px 12px; 
-  background-color: #0000008F; 
-  color: #FFFFFF; 
-  display: flex; 
-  align-items: center; 
-  white-space: nowrap; 
-  justify-content: space-between; 
-  overflow-x: hidden;
+.navbar {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0px 10px;
+	background-color: #0000008F;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	justify-content: space-between;
+	overflow-x: hidden
 } 
 
 .navbar-logo { 
