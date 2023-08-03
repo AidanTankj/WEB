@@ -39,28 +39,38 @@
   }
   
   
-/* Apply Flexbox to the image container */
-.image-container {
-  display: flex;
-  flex-wrap: wrap; /* This allows the images to wrap to a new line on small screens */
-  justify-content: center; /* Center the images horizontally within the container */
+/* Center the container */
+.container {
+  text-align: center;
+}
+
+/* Set the width and spacing for the boxes on desktop */
+#leftbox, #middlebox, #rightbox {
+  display: inline-block;
+  width: calc(33.33% - 20px); /* Adjusted width to display three boxes side by side with 20px margin between */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Style the images */
-.image-container img {
-  width: calc(33.33% - 10px); /* Adjusted width to display three images side by side with 10px space between */
-  margin-bottom: 20px; /* Add some vertical spacing between images */
+img {
+  height: 210px;
 }
 
-/* Add space between images on the same line */
-.image-container img:not(:last-child) {
-  margin-right: 20px; /* Adjust the value to add desired space */
+/* Style your custom buttons */
+.button {
+  display: inline-block;
+  background-color: #E4D4B7;
+  text-decoration: none;
+  font-family: myFirstFont, 'Brixton Sans Outline', sans-serif;
+  font-size: 150%;
 }
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
-  /* Reset the width and margin of each image on mobile */
-  .image-container img {
+  /* Reset the width and spacing of the boxes on mobile */
+  #leftbox, #middlebox, #rightbox {
     width: 100%;
     margin-right: 0;
   }
