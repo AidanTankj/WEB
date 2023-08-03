@@ -1,28 +1,28 @@
-const toggleBtn = document.querySelector('.menubutton')
+const toggleBtn4 = document.querySelector('.menubutton')
 const toggleBtnIcon = document.querySelector('#menubuttonimg')
-const dropDownMenu = document.querySelector('.dropdown-menu')
+const dropDownMenu4 = document.querySelector('.dropdown-menu')
 
-toggleBtn.onclick = function () {
-	dropDownMenu.classList.toggle('open')
-	const isOpen = dropDownMenu.classList.contains('open')
+toggleBtn4.onclick = function () {
+	dropDownMenu4.classList.toggle('open')
+	const isOpen = dropDownMenu4.classList.contains('open')
 	const imgSrc = isOpen ? 'xmark.png' : 'bars-solid.png';
 	toggleBtnIcon.src = imgSrc;
 }
 
-const toggleBtn2 = document.querySelector('.search-icon')
-const dropDownMenu2 = document.querySelector('.search-bar')
+const toggleBtn5 = document.querySelector('.search-icon')
+const dropDownMenu5 = document.querySelector('.search-bar')
 
-toggleBtn2.onclick = function () {
-	dropDownMenu2.classList.toggle('open')
-	dropDownMenu3.classList.remove('open')
+toggleBtn5.onclick = function () {
+	dropDownMenu5.classList.toggle('open')
+	dropDownMenu6.classList.remove('open')
 }
 
-const toggleBtn3 = document.querySelector('.language-icon')
-const dropDownMenu3 = document.querySelector('#google_translate_element')
+const toggleBtn6 = document.querySelector('.language-icon')
+const dropDownMenu6 = document.querySelector('#google_translate_element')
 
-toggleBtn3.onclick = function () {
-	dropDownMenu3.classList.toggle('open')
-	dropDownMenu2.classList.remove('open')
+toggleBtn6.onclick = function () {
+	dropDownMenu6.classList.toggle('open')
+	dropDownMenu5.classList.remove('open')
 }
 
 function search() {
