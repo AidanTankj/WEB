@@ -39,29 +39,199 @@
   }
   
   
-/* Apply Flexbox to the image container */
-.image-container {
-  display: flex;
-  flex-wrap: wrap; /* This allows the images to wrap to a new line on small screens */
-  justify-content: center; /* Center the images horizontally within the container */
+/* Center the container */
+.container {
+  text-align: center;
+}
+
+/* Set the width and spacing for the boxes on desktop */
+#leftbox, #middlebox, #rightbox {
+  display: inline-block;
+  width: calc(33.33% - 20px); /* Adjusted width to display three boxes side by side with 20px margin between */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Style the images */
-.image-container img {
-  width: calc(33.33% - 10px); /* Adjusted width to display three images side by side with 10px space between */
-  margin-bottom: 20px; /* Add some vertical spacing between images */
+img {
+  height: 210px;
 }
 
-/* Add space between images on the same line */
-.image-container img:not(:last-child) {
-  margin-right: 20px; /* Adjust the value to add desired space */
+/* Style your custom buttons */
+.button {
+  display: inline-block;
+  background-color: #E4D4B7;
+  text-decoration: none;
+  font-family: myFirstFont, 'Brixton Sans Outline', sans-serif;
+  font-size: 150%;
 }
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
-  /* Reset the width and margin of each image on mobile */
-  .image-container img {
+  /* Reset the width and spacing of the boxes on mobile */
+  #leftbox, #middlebox, #rightbox {
     width: 100%;
     margin-right: 0;
   }
 }
+
+/* Add this CSS to your existing stylesheets or in <style> tags */
+
+/* Mobile view styles */
+@media screen and (max-width: 600px) {
+	.popup_flight_travlDil {
+		width: 80%; /* Adjust the width as needed */
+		margin: 10% auto; /* Centers the popup */
+	}
+
+	.content_flightht_travel_dil {
+		font-size: 120%; /* Adjust font size for better readability on mobile */
+	}
+
+	/* Center the close button on mobile */
+	.close_flight_travelDl {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+	}
+}
+
+
+/* CSS for the scrollbar */
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+
+}
+
+html::-webkit-scrollbar-track{
+  background: #13131a;
+
+}
+
+html::-webkit-scrollbar-thumb{
+ background: #fff;
+ border-radius: 5rem;
+}
+
+
+
+/* CSS for the navigation bar */ 
+.navbar { 
+  position: relative; 
+  top: 0; left: 0;
+  width: 100%;
+  padding: 12px 0px 12px; 
+  background-color: #0000008F; 
+  color: #FFFFFF; 
+  display: flex; 
+  align-items: center; 
+  white-space: nowrap; 
+  justify-content: space-between; 
+  overflow-x: hidden;
+} 
+
+.navbar-logo { 
+  clear: left; 
+  display: flex; 
+  align-items: center; 
+  font-size: 32px; 
+  font-family: "Roboto", sans-serif; 
+  font-weight: bold;
+}
+
+.navbar-logo img { 
+  padding-left: 25px; 
+  margin-right: 7px; 
+  max-height: 40px; 
+  top: 10px;
+}
+
+.navbar-slogan { 
+  padding-left: 20px; 
+  font-size: 22px; 
+  font-family: 'Abhaya Libre', sans-serif; 
+  letter-spacing: 6px; 
+  margin-top: -5px;
+} 
+
+.navbar-tabs { 
+  display: flex; 
+  align-items: center;
+}
+
+li { 
+  list-style-type: none
+}
+
+.navbar-tab { 
+  font-size: 27px;
+  font-family: 'Aleo', sans-serif;
+  margin-right: 30px;
+}
+
+.navbarbuttons { 
+  color: white;
+  text-decoration: none;
+}
+
+.navbarbuttons:hover { 
+  color: #FFFFFF55;
+}
+
+.navbarbuttons:active { 
+  color: #4A2C2A;
+}
+
+.search-icon, .language-icon, .login { 
+  margin-left: 10px; 
+  margin-right: 25px; 
+  cursor: pointer;
+}
+
+.navbar-right { 
+  display: flex; 
+  align-items: center; 
+  margin-right: 2%}
+
+.menubutton { 
+  display: none; 
+  cursor: pointer; 
+  scale: 1.3; 
+  margin: 0 25px;
+}
+
+.dropdown-menu {
+  position: absolute; 
+  right: 2%; top: 100px; 
+  width: 200px; 
+  border-radius: 20px; 
+  backdrop-filter: blur(6px); 
+  background: #0000002F; 
+  display: none; 
+  height: 0px;
+  overflow: hidden; 
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu li { 
+  padding: 15px 0px 0px 0px; 
+  align-items: center; 
+  justify-content: center; 
+  display: flex;
+}
+
+.dropdown-menu.open { 
+  height: 250px;
+}
+
+  @media (max-width: 1065px) { .navbar-tabs, .login, .search-icon, .language-icon {display: none} .menubutton {display: block} 
+.dropdown-menu {display: block} .navbar-tab {margin: 0px}}
