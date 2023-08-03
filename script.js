@@ -14,7 +14,15 @@ const dropDownMenu2 = document.querySelector('.search-bar')
 
 toggleBtn2.onclick = function () {
 	dropDownMenu2.classList.toggle('open')
-	const isOpen = dropDownMenu2.classList.contains('open')
+	dropDownMenu3.classList.remove('open')
+}
+
+const toggleBtn3 = document.querySelector('.language-icon')
+const dropDownMenu3 = document.querySelector('#google_translate_element')
+
+toggleBtn3.onclick = function () {
+	dropDownMenu3.classList.toggle('open')
+	dropDownMenu2.classList.remove('open')
 }
 
 function search() {
@@ -37,4 +45,8 @@ function search() {
 
 	// Display the search results.
 	document.getElementById("searchResults").innerHTML = results.map(element => element.textContent).join("");
+}
+
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
