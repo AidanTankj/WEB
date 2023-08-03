@@ -39,25 +39,29 @@
   }
   
   
+/* Apply Flexbox to the image container */
 .image-container {
   display: flex;
   flex-wrap: wrap; /* This allows the images to wrap to a new line on small screens */
+  justify-content: center; /* Center the images horizontally within the container */
 }
 
-/* Set the width of each image to occupy 33.33% of the container on desktop */
+/* Style the images */
 .image-container img {
-  width: 33.33%;
+  width: calc(33.33% - 10px); /* Adjusted width to display three images side by side with 10px space between */
+  margin-bottom: 20px; /* Add some vertical spacing between images */
+}
+
+/* Add space between images on the same line */
+.image-container img:not(:last-child) {
+  margin-right: 20px; /* Adjust the value to add desired space */
 }
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
-  /* Change the flex direction to column on mobile */
-  .image-container {
-    flex-direction: column;
-  }
-
-  /* Reset the width of each image to occupy 100% of the container on mobile */
+  /* Reset the width and margin of each image on mobile */
   .image-container img {
     width: 100%;
+    margin-right: 0;
   }
 }
